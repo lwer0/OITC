@@ -1,0 +1,9 @@
+name: OITC
+main: me.artish1.OITC.OITC
+version: 3.2
+author: artish1
+description: >
+        One In The Chamber - Minigame
+commands:
+  oitc:
+    description: The main command for OITC(One in the Chamber)
