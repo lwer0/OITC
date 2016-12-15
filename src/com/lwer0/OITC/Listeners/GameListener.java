@@ -5,13 +5,13 @@ import com.lwer0.OITC.Arena.Arena;
 import com.lwer0.OITC.Arena.Arenas;
 import com.lwer0.OITC.Arena.LeaveReason;
 import com.lwer0.OITC.Utils.Methods;
-import net.minecraft.server.v1_9_R2.PacketPlayInClientCommand;
-import net.minecraft.server.v1_9_R2.PacketPlayInClientCommand.EnumClientCommand;
+import net.minecraft.server.v1_10_R1.PacketPlayInClientCommand;
+import net.minecraft.server.v1_10_R1.PacketPlayInClientCommand.EnumClientCommand;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
-import org.bukkit.craftbukkit.v1_9_R2.entity.CraftPlayer;
+import org.bukkit.craftbukkit.v1_10_R1.entity.CraftPlayer;
 import org.bukkit.entity.Arrow;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Event.Result;
@@ -52,6 +52,7 @@ public class GameListener implements Listener{
 			Bukkit.getScheduler().scheduleSyncDelayedTask(plugin, new Runnable(){
 
 				@SuppressWarnings("deprecation")
+                                @Override
 				public void run() {
 					player.updateInventory();
 					
@@ -144,6 +145,7 @@ public class GameListener implements Listener{
 				
 				Bukkit.getScheduler().scheduleSyncDelayedTask(this.plugin, new Runnable()
 			      {
+                                @Override
 			        public void run()
 			        {
 			          PacketPlayInClientCommand packet = new PacketPlayInClientCommand(EnumClientCommand.PERFORM_RESPAWN);
