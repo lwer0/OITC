@@ -1,17 +1,17 @@
-package me.artish1.OITC.Listeners;
+package com.lwer0.OITC.Listeners;
 
-import me.artish1.OITC.OITC;
-import me.artish1.OITC.Arena.Arena;
-import me.artish1.OITC.Arena.Arenas;
-import me.artish1.OITC.Arena.LeaveReason;
-import me.artish1.OITC.Utils.Methods;
-import net.minecraft.server.v1_7_R4.EnumClientCommand;
-import net.minecraft.server.v1_7_R4.PacketPlayInClientCommand;
+import com.lwer0.OITC.OITC;
+import com.lwer0.OITC.Arena.Arena;
+import com.lwer0.OITC.Arena.Arenas;
+import com.lwer0.OITC.Arena.LeaveReason;
+import com.lwer0.OITC.Utils.Methods;
+import net.minecraft.server.v1_9_R2.PacketPlayInClientCommand;
+import net.minecraft.server.v1_9_R2.PacketPlayInClientCommand.EnumClientCommand;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
-import org.bukkit.craftbukkit.v1_7_R4.entity.CraftPlayer;
+import org.bukkit.craftbukkit.v1_9_R2.entity.CraftPlayer;
 import org.bukkit.entity.Arrow;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Event.Result;

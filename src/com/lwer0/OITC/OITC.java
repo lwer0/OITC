@@ -1,13 +1,14 @@
-package me.artish1.OITC;
+package com.lwer0.OITC;
 
+import com.lwer0.OITC.Listeners.GameListener;
+import com.lwer0.OITC.Listeners.SignListener;
 import java.io.File;
 import java.util.logging.Logger;
 
-import me.artish1.OITC.Arena.Arena;
-import me.artish1.OITC.Arena.Arenas;
-import me.artish1.OITC.Arena.LeaveReason;
-import me.artish1.OITC.Listeners.*;
-import me.artish1.OITC.Utils.Methods;
+import com.lwer0.OITC.Arena.Arena;
+import com.lwer0.OITC.Arena.Arenas;
+import com.lwer0.OITC.Arena.LeaveReason;
+import com.lwer0.OITC.Utils.Methods;
 
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
@@ -20,29 +21,29 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class OITC extends JavaPlugin {
 		
-		public final Logger logger = Logger.getLogger("Minecraft");
-		public final Methods m = new Methods(this);
-		public final GameListener gl = new GameListener(this);
-		public final SignListener sl = new SignListener(this);
+	public final Logger logger = Logger.getLogger("Minecraft");
+	public final Methods m = new Methods(this);
+	public final GameListener gl = new GameListener(this);
+        public final SignListener sl = new SignListener(this);
 		
 	
-		public File kitsFile;
-		public static FileConfiguration kits;
-		public File playersFile;
-		public static FileConfiguration players;
-		public File arenasFile;
-		public FileConfiguration arenas;
+	public File kitsFile;
+	public static FileConfiguration kits;
+	public File playersFile;
+	public static FileConfiguration players;
+	public File arenasFile;
+	public FileConfiguration arenas;
 	
 	
-	  public static FileConfiguration getKitsFile(){
-		  return kits;
-	  }
+	public static FileConfiguration getKitsFile(){
+	  return kits;
+	}
 	  
 	  
 	  
 	  
 	 
-	
+	@Override
 	public void onEnable() {
 		
 		//LOADING CONFIG FILES ****************************

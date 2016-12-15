@@ -1,4 +1,4 @@
-package me.artish1.OITC.Arena;
+package com.lwer0.OITC.Arena;
 
 public enum GameState {
 	

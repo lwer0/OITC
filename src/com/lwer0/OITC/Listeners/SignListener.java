@@ -1,9 +1,9 @@
-package me.artish1.OITC.Listeners;
+package com.lwer0.OITC.Listeners;
 
-import me.artish1.OITC.OITC;
-import me.artish1.OITC.Arena.Arena;
-import me.artish1.OITC.Arena.Arenas;
-import me.artish1.OITC.Arena.GameState;
+import com.lwer0.OITC.OITC;
+import com.lwer0.OITC.Arena.Arena;
+import com.lwer0.OITC.Arena.Arenas;
+import com.lwer0.OITC.Arena.GameState;
 
 import org.bukkit.ChatColor;
 import org.bukkit.block.Sign;

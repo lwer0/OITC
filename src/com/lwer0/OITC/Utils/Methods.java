@@ -1,4 +1,4 @@
-package me.artish1.OITC.Utils;
+package com.lwer0.OITC.Utils;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -8,8 +8,8 @@ import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-import me.artish1.OITC.OITC;
-import me.artish1.OITC.Arena.Arena;
+import com.lwer0.OITC.OITC;
+import com.lwer0.OITC.Arena.Arena;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Color;

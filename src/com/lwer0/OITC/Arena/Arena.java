@@ -1,4 +1,4 @@
-package me.artish1.OITC.Arena;
+package com.lwer0.OITC.Arena;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -6,8 +6,8 @@ import java.util.List;
 import java.util.Random;
 import java.util.UUID;
 
-import me.artish1.OITC.OITC;
-import me.artish1.OITC.Utils.Methods;
+import com.lwer0.OITC.OITC;
+import com.lwer0.OITC.Utils.Methods;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
